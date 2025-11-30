@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <title>Форма зворотного зв'язку</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{font-family:Arial, sans-serif; max-width:720px;margin:20px auto;padding:10px;}
+    form{border:1px solid #ccc; padding:16px; border-radius:8px; background:#f9f9f9;}
+    label{display:block; margin-bottom:10px;}
+    input[type="text"], input[type="email"], textarea{width:100%; padding:8px; box-sizing:border-box;}
+    .required{color:#900;}
+    .submit-row{margin-top:12px;}
+    button{padding:10px 16px; border:0; border-radius:6px; cursor:pointer;}
+  </style>
+</head>
+<body>
+  <p><a href="index.html">← На головну</a></p>
+  <h1>Форма зворотного зв'язку</h1>
+
+  <!-- Дизайн форми відповідає простому мінімальному стилю (кольори, шрифти). -->
+  <form action="#" method="post" onsubmit="alert('Форма не відправлятиметься — приклад.'); return false;">
+    <label>Ім'я <span class="required">*</span><br>
+      <input type="text" name="name" required>
+    </label>
+
+    <label>Email <span class="required">*</span><br>
+      <input type="email" name="email" required>
+    </label>
+
+    <label>Телефон<br>
+      <input type="text" name="phone" placeholder="+380-">
+    </label>
+
+    <label>Тема<br>
+      <input type="text" name="subject">
+    </label>
+
+    <label>Повідомлення <span class="required">*</span><br>
+      <textarea name="message" rows="6" required></textarea>
+    </label>
+
+    <div class="submit-row">
+      <button type="submit">Відправити</button>
+    </div>
+  </form>
+
+  
+</body>
+</html>

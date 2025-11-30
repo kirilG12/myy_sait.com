@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Анкета працевлаштування</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: white;
+    width: 700px;
+}
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+th {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    font-style: italic;
+}
+.red {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+.label {
+    background-color: #66cccc;
+    width: 200px;
+}
+.field {
+    background-color: #cccccc;
+}
+input[type="text"], input[type="password"], select, textarea {
+    width: 95%;
+}
+textarea {
+    resize: none;
+}
+.buttons {
+    text-align: center;
+    padding: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<h2><b><i>Анкета працевлаштування</i></b></h2>
+<p class="red">Ласкаво просимо!</p>
+
+<form>
+<table>
+<tr>
+    <td class="label">Ваше ім'я</td>
+    <td class="field"><input type="text" name="name"></td>
+</tr>
+<tr>
+    <td class="label">Пароль</td>
+    <td class="field">
+        <input type="password" name="pass"> &nbsp; повторіть пароль <input type="password" name="pass2">
+    </td>
+</tr>
+<tr>
+    <td class="label">Ваша спеціалізація</td>
+    <td class="field">
+        <select name="special">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+        </select>
+    </td>
+</tr>
+<tr>
+    <td class="label">Стать</td>
+    <td class="field">
+        <input type="radio" name="sex" value="m"> Ч
+        <input type="radio" name="sex" value="f"> Ж
+    </td>
+</tr>
+<tr>
+    <td class="label">Ваші навички та знання</td>
+    <td class="field">
+        <input type="checkbox" name="html"> знання HTML та CSS<br>
+        <input type="checkbox" name="perl"> знання Perl<br>
+        <input type="checkbox" name="asp"> знання ASP<br>
+        <input type="checkbox" name="photoshop"> знання Adobe Photoshop<br>
+        <input type="checkbox" name="java"> знання JAVA<br>
+        <input type="checkbox" name="js"> знання JavaScript<br>
+        <input type="checkbox" name="framework"> знання фреймворків
+    </td>
+</tr>
+<tr>
+    <td class="label">Додаткові знання про себе</td>
+    <td class="field">
+        <textarea name="info" rows="5" cols="40"></textarea>
+    </td>
+</tr>
+</table>
+
+<div class="buttons">
+    <input type="submit" value="Зареєструвати">
+    <input type="reset" value="Очистити форму">
+</div>
+
+</form>
+
+</body>
+</html>
+
+
